@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password hide and show</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input">
+        <input type="password" placeholder="Enter any Password" id="Password">
+        <img src="assets/2767146.png" id="img" onclick="imgChange">
+    </div>
+
+
+    <script>
+        let img = document.querySelector("#img");
+        let password = document.querySelector("#Password");
+         
+
+        function imgChange(){
+            if(password.type == "password"){
+                password.type = "text";
+            }else{
+               password.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
