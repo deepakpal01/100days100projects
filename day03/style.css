@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: #222;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(247, 248, 249, 0.3);
+}
+.clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+        border-radius: 10px;
+
+    /* background-color:#ccc; */
+}
+
+.clip1{
+    background-image: url(https://th.bing.com/th/id/OIP.xisA25xqav5wof6JaYPSVAHaEK?w=284&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0,46% 0,39% 100%,0 100%);
+}
+
+.clip2{
+    background-image: url(https://th.bing.com/th/id/OIP.R1K7A4-OIglKo9WJiO6plgHaEK?w=287&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0,87% 0,64% 100%,33% 100%);
+
+}
+
+.clip3{
+    background-image: url(https://th.bing.com/th/id/OIP.ntV5MMMjltusU4B1jJ-pkAHaE8?w=274&h=184&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0,100% 0,100% 100%,63% 100%);
+
+}
+
+.container:hover .clip{
+    clip-path: polygon(100%  0,100% 0,100% 100%,100% 100%);
+
+}
+.container .clip:hover{
+    clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+}
