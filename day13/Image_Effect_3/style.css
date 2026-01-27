@@ -1,0 +1,79 @@
+/* body{
+    height: 100vh;
+    /* border: 2px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    height: 25rem;
+    width: 20rem;
+    border: 2px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; 
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container .content{
+    color: white;
+    position: absolute;
+}
+
+.container:hover .content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: white;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}  */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    height: 25rem;
+    width: 20rem;
+    border: 2px solid;
+    overflow: hidden; /* IMPORTANT */
+}
+
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 👇 initial state */
+.container .content{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transform: translateY(100%); /* hidden */
+    transition: all 0.5s ease;
+}
+
+/* 👇 hover state */
+.container:hover .content{
+    transform: translateY(0); /* visible */
+}
