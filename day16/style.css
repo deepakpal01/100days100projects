@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    background: #000;
+    color: #fff;
+}
+.container{
+    padding: 20px;
+    margin: 30px;
+}
+section{
+    border: 2px solid white;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.scrole{
+    height: 5px;
+    width: calc(100% - 6em);
+    top: 10px;
+    left: 3em;
+    border-radius: 3px;
+    position:static;
+}
+.scrole .progress{
+    height: 100%;
+    width: 100px;
+    border-radius: 3px;
+    background: linear-gradient(30deg,#999,#999);
+    transition: width 0.1s;
+}
+/* progress */
+.progress{
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, red, yellow);
+        position:static;
+}
+
+/* content */
+.container{
+    padding-top: 20px;
+}
