@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: crimson;
+    font-family: sans-serif;
+}
+
+#first{
+    margin: 100px;
+    list-style: none;
+}
+
+/* hide radio */
+#first input{
+    display: none;
+}
+
+/* label */
+#first label{
+    padding: 12px;
+    background: #fff;
+    color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* arrow */
+#first label span{
+    transition: 0.3s;
+}
+
+/* content hidden */
+#first .content{
+    max-height: 0;
+    overflow: hidden;
+    background: #f1f1f1;
+    padding: 0 12px;
+    transition: 0.4s;
+}
+
+/* ✅ show content when checked */
+#first input:checked + label + .content{
+    max-height: 200px;
+    padding: 12px;
+}
+
+/* arrow rotate */
+#first input:checked + label span{
+    transform: rotate(90deg);
+}
