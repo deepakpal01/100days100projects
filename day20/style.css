@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-family: sans-serif;
+    
+}
+.container{
+text-align: center;
+font-size: 23px;
+margin: 0 auto;
+}
+
+h1{
+    color: black;
+    text-transform: uppercase;
+}
+p{
+    min-width: 600px;
+}
+.btn{
+    padding: 0;
+    margin: 0;
+}
+div.cursor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(13, 2, 167);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
